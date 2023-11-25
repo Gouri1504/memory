@@ -1,8 +1,13 @@
 * {
     box-sizing: border-box;
+    
   }
   body {
     font-family: Arial, Tahoma, sans-serif;
+    background-image: url("./imgs/memogame-carrousel2.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
   }
   .control-buttons {
     position: fixed;
@@ -11,7 +16,7 @@
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-image:url("./imgs/bg.jpg");
+    /* background-image:url("./imgs/bgg.jpg"); */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -53,10 +58,10 @@
   .info-container {
     width: 1080px;
     margin: 20px auto 0;
-    background-color: #ffffff;
-    /*background-image: url("./imgs/game\ dev.png");
+    background-color: #dfcaca;
+    /* background-image: url("./imgs/bgg.jpg");
     background-position: center;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat; */
     padding: 20px;
     font-size: 24px;
     overflow: hidden;
@@ -183,15 +188,19 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url("")
+    background-image: url("./imgs/memogame-carrousel2.jpg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
     
     
   }
   
   .container h2 {
-    font-size: 2rem;
+    font-size: 6rem;
     margin-bottom: 20px;
-    color: #333;
+    color: rgb(10, 9, 9);
+    font-family:monospace;
+    font-style: italic;
   }
   
   #player-info-form {
@@ -218,11 +227,11 @@
     padding: 10px;
     border: none;
     background-color: rgb(199, 109, 109);
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 1rem;
   }
-  
+
   
   /* Instructions Page */
     
@@ -232,21 +241,21 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #fff;
-    background-image: url("");
+     /* background-color: rgb(161, 252, 255);  */
+     background-image: url("./imgs/icons-for-memory-game-theme-upscaled.png"); 
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
   
   #instructions-page h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: #000000;
   }
   
   #instructions-page p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
@@ -255,13 +264,16 @@
   #instructions-page ol {
     padding: 20px;
     list-style: none;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
   }
   
   #instructions-page li {
     margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(64, 105, 155)
   }
+  
   
   #instructions-page #start-game {
     padding: 10px;
@@ -269,5 +281,102 @@
     background-color: #b77e7e;
     color: white;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 3rem;
   }
+
+  .buttonDiv{
+
+    display: flex;
+    margin-left: 40vw;
+ 
+  }
+
+ 
+
+
+  @media only screen and (min-width: 700px) and (max-width: 1920px ) {
+    body {
+      font-size: 16px; /* Increase font size for larger screens */
+      background-image: url("./imgs/memogame-carrousel2.jpg.webp");
+      height: 1500px;
+    }
+  
+    
+    .control-buttons {
+      /* Adjust positioning and dimensions of control buttons for larger screens */
+      position: fixed;
+      bottom: 0;
+      width: 20%;
+      height: 100%;
+    }
+  
+    .info-container {
+      width: 70%; /* Increase width of info container for larger screens */
+    }
+  
+    .memory-game-blocks {
+      width: 900px; /* Increase width of memory game blocks for larger screens */
+    }
+
+    .buttonDiv{
+      margin-right: 40vw;
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 800px) {
+    body {
+      font-size: 14px; /* Reduce font size for smaller screens */
+      font-family: Arial, Tahoma, sans-serif;
+      background-image: url("./imgs/memogame-carrousel2.jpg.webp");
+      height: 1500px;
+    }
+    .container h2 {
+      font-size: 4rem;
+      text-align: center;
+  }
+    .control-buttons {
+      /* Adjust positioning and dimensions of control buttons for smaller screens */
+      position: absolute;
+      top: 30%;
+      width: 10%;
+      height: 20%;
+      bottom: 50%;
+    }
+    
+    .info-container {
+      width: 172%; /* Reduce width of info container for smaller screens */
+    }
+  
+    .memory-game-blocks {
+      width: 600px; /* Reduce width of memory game blocks for smaller screens */
+    }
+  }
+
+  @media only screen and (min-width: 200px) and (max-width: 600px) {
+    body {
+      font-size: 14px; /* Reduce font size for smaller screens */
+      font-family: Arial, Tahoma, sans-serif;
+      background-image: url("./imgs/memogame-carrousel2.jpg.webp");
+      height: 1500px;
+    }
+    .container h2 {
+      font-size: 4rem;
+      text-align: center;
+  }
+    .control-buttons {
+      /* Adjust positioning and dimensions of control buttons for smaller screens */
+      position: absolute;
+      top: 30%;
+      width: 40%;
+      height: 20%;
+      bottom: 50%;
+    }
+    
+    .info-container {
+      width: 172%; /* Reduce width of info container for smaller screens */
+    }
+  
+    .memory-game-blocks {
+      width: 100px; /* Reduce width of memory game blocks for smaller screens */
+    }
+  }
+  

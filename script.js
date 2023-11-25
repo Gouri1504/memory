@@ -24,13 +24,13 @@ var imageSources = [
         }
       
         localStorage.setItem("user", JSON.stringify(user));
-        //console.log(localStorage.getItem("user"));
+        
     
   }
   // Select The Start Game Button
   document.querySelector(".control-buttons .startgame").onclick = function () {
     shuffleAllImages();
-    //console.log("bforchhhh")
+    
     // Prompt Window To Ask For Name
     playerName = prompt("What's Your Name?"); 
     saveLocalStorage();
@@ -43,10 +43,10 @@ var imageSources = [
       // Set Name To Your Name
       document.querySelector(".name span").innerHTML = playerName;
     } 
-    // Remove Splash Screen
+    //Remove Splash Screen
     document.querySelector(".control-buttons").remove();
-     //function show 
-   
+      
+   //flip function
      var flipInterval = setInterval(() => {
       flipTime--;
        var elements = document.getElementsByClassName("game-block");

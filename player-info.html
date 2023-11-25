@@ -6,7 +6,7 @@
     <title>Memory Game - Player Info</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body background="./imgs/icons-for-memory-game-theme-upscaled.png">
+<body>
     <div class="container">
         <h2>Memory Game</h2>
 
@@ -17,10 +17,15 @@
             <label for="player-nickname">Enter your nickname:</label>
             <input type="text" id="player-nickname" name="playerNickname" required>
             <br>
-            <button id="game">Start Game</button>
+            <input type="button" id="game" value="Start Game" onclick="redirectToDetails()"> 
         </form>
 
-        <a href="index.html" style="display: none;" id="start-game-link"></a>  
+         <!---- Redirect to the details of the website page--!-->
+        <script>
+            function redirectToDetails() {
+               window.location.href = "instrructions.html";
+              }
+            </script> 
     </div>
 
     <script src="script.js"></script>
